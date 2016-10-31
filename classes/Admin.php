@@ -12,11 +12,10 @@ namespace AdtrakCore\Classes;
 
 class Admin
 {
-	protected $version;
-
-	public function __construct()
+	
+	public function __construct($version) 
 	{
-		$this->version = '0.1';
+		$this->version = $version;
 	}
 
 	/**
