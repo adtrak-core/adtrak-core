@@ -14,6 +14,7 @@ namespace AdtrakCore\Classes;
 use \AdtrakCore\Classes\Loader as Loader;
 use \AdtrakCore\Classes\Admin as Admin;
 use \AdtrakCore\Classes\CookieNotification as Cookies;
+use \AdtrakCore\Classes\Cleanup as Cleanup;
 
 class Core
 {
@@ -23,7 +24,9 @@ class Core
 	public function __construct()
 	{
 		$this->version = '0.1';
+
 		$this->loader = new Loader;
+
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
 	}
@@ -53,6 +56,10 @@ class Core
 		$cookie = new Cookies($this->version);
 		$this->loader->add_action('wp_enqueue_scripts', $cookie, 'enqueue_public_scripts');
 		$this->loader->add_action('wp_enqueue_scripts', $cookie, 'enqueue_public_styles');
+
+		# clean up head
+		$cleanup = new Cleanup($this->version);
+		$this->loader->add_action('init', $cleanup, 'headers');
 	}
 
 	/**
