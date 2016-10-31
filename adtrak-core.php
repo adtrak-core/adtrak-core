@@ -32,6 +32,10 @@ if ( ! defined( 'WPINC' ) ) {
 # autoloader
 require_once( 'vendor/autoload.php' );
 
+# define apths
+define( 'AC_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
+define( 'AC_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+
 /**
  * The code that runs during plugin activation.
  * This action is documented in classes/Activator.php
