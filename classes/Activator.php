@@ -4,12 +4,12 @@
  * This class defines all code necessary to run during the plugin's activation.
  *
  * @since      1.0.0
- * @package    Boilerplate
- * @subpackage Boilerplate/Classes
+ * @package    AdtrakCore
+ * @subpackage AdtrakCore/Classes
  * @author     Jack Whiting <jack.whiting@adtrak.co.uk>
  */
 
-namespace Boilerplate\Classes;
+namespace AdtrakCore\Classes;
 
 class Activator
 {
