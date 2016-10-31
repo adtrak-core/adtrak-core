@@ -21,4 +21,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Changelog ==
 
-= 0.1 =
+= 0.2 =
+- added cleanup functions to improve output
+- added in cookie notifications
