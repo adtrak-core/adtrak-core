@@ -11,15 +11,33 @@
 
 namespace AdtrakCore\Classes;
 
+use \AdtrakCore\Classes\Loader as Loader;
+use \AdtrakCore\Classes\Admin as Admin;
+
 class Core
 {
+	protected $loader;
+
 	public function __construct()
 	{
+		$this->loader = new Loader;
 
+		$this->define_admin_hooks();
 	}
 
-	public function run()
+	public function define_admin_hooks()
 	{
+		$admin = new Admin;
+		$this->loader->add_action('admin_enqueue_scripts', $admin, 'enqueue_styles');
+	}
 
+	/**
+	 * Run the loader to execute all of the hooks with WordPress.
+	 *
+	 * @since    1.0.0
+	 */
+	public function run() 
+	{
+		$this->loader->run();
 	}
 }
