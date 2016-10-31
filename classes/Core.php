@@ -29,6 +29,7 @@ class Core
 	{
 		$admin = new Admin;
 		$this->loader->add_action('admin_enqueue_scripts', $admin, 'enqueue_styles');
+		$this->loader->add_action('admin_init', $admin, 'remove_default_meta_box');
 	}
 
 	/**
