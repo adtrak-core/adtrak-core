@@ -55,6 +55,7 @@ function deactivate_core()
 }
 
 # github updater
+$className = PucFactory::getLatestClassVersion('PucGitHubChecker');
 $updater = new $className(
     'https://github.com/adtrak/core',
     __FILE__,
