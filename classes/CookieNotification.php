@@ -34,7 +34,7 @@ class CookieNotification
 	 */
 	public function shortcode()
 	{
-		include_once AC_PLUGIN_URL . 'views/cookie-shortcode.php';
+		include_once AC_PLUGIN_PATH . 'views/cookie-shortcode.php';
 	}
 
 	/**
