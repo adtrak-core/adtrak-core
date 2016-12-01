@@ -1,4 +1,3 @@
 *.codekit3
 *.sass-cache
 *.scssc
-vendor/*
