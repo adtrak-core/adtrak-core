@@ -4,7 +4,7 @@ Contributors: jackabox
 Tags: core, functionality, acf  
 Requires at least: 4.6.0  
 Tested up to: 4.7.1  
-Stable tag: 1.0.0  
+Stable tag: 0.2.5    
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -20,6 +20,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 == Frequently Asked Questions ==
 
 == Changelog ==
+= 0.2.5 =
+- added in new updater
+- fixed issues with cookie plugin
 
 = 0.2 =
 - added cleanup functions to improve output
