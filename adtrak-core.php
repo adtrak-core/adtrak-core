@@ -58,11 +58,11 @@ function deactivate_core()
 require __DIR__ . '/vendor/yahnis-elsts/plugin-update-checker/plugin-update-checker.php';
 $className = PucFactory::getLatestClassVersion('PucGitHubChecker');
 $updater = new $className(
-    'https://github.com/adtrak/core',
+    'https://github.com/adtrak-core/plugin',
     __FILE__,
     'master'
 );
-$updater->setAccessToken('2681cf527dd6cee16e94bb4c7e0623d1cc07aa1b');
+$updater->setAccessToken('68611256e09d579f6e9acc3a41449e498a670bf0');
 
 /**
  * Begins execution of the plugin.
