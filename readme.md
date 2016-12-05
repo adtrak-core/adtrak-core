@@ -20,6 +20,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 0.3.0 =
+- added in the alt tags to media library.
+- added in default dashboard widgets
+- added in admin theme to core
+- added in marketing options
+- added in site options placeholder 
+
 = 0.2.5 =
 - added in new updater
 - fixed issues with cookie plugin

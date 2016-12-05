@@ -13,9 +13,9 @@
  *
  * @wordpress-plugin
  * Plugin Name: 	Adtrak Core
- * Plugin URI: 		http://plugins.adtrakdev.com/core
+ * Plugin URI: 		http://github.com/adtrak-core/plugin
  * Description: 	Core functionality for WordPress Development.
- * Version: 		0.2.5
+ * Version: 		0.3.0
  * Author: 			Adtrak
  * Author URI: 		https://adtrak.co.uk
  * License: 		GPL-2.0+
