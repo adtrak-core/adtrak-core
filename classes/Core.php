@@ -46,6 +46,12 @@ class Core
 
 		$this->loader->add_action('wp_dashboard_setup', $admin, 'add_dashboard_widgets');
 
+		$this->loader->add_filter('manage_media_columns', $admin, 'adjust_media_library_cols');
+		$this->loader->add_action('manage_media_custom_column', $admin, 'adjust_media_library_vals', 10, 2);
+
+		# options page
+		$this->loader->add_action('init', $admin, 'render_options_page');
+
 		$cookie = new Cookies($this->version);
 		$this->loader->add_action('init', $cookie, 'register_shortcodes');
 	}
