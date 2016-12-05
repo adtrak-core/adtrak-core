@@ -28,6 +28,7 @@ class Core
 		$this->loader = new Loader;
 
 		$this->define_admin_hooks();
+		$this->define_login_hooks();
 		$this->define_public_hooks();
 	}
 
@@ -41,9 +42,16 @@ class Core
 		$admin = new Admin($this->version);
 		$this->loader->add_action('admin_enqueue_scripts', $admin, 'enqueue_styles');
 		$this->loader->add_action('admin_init', $admin, 'remove_default_meta_box');
+		$this->loader->add_filter('admin_footer_text', $admin, 'adtrak_footer_content');
 
 		$cookie = new Cookies($this->version);
 		$this->loader->add_action('init', $cookie, 'register_shortcodes');
+	}
+
+	public function define_login_hooks()
+	{
+		$admin = new Admin($this->version);		
+		$this->loader->add_action('login_enqueue_scripts', $admin, 'enqueue_styles');
 	}
 
 	/**
