@@ -28,6 +28,17 @@ class Admin
 		wp_enqueue_style('adtrak-admin', AC_PLUGIN_URL . 'assets/css/adtrak-admin.css', [], $this->version, 'all');
 		wp_enqueue_style('adtrak-default', AC_PLUGIN_URL . 'assets/css/adtrak-default.css', [], $this->version, 'all');
 	}
+	
+	public function adjust_media_library_cols($cols)
+	{
+		$cols["alt"] = "Alt";
+		return $cols;
+	}
+
+	function adjust_media_library_vals($column_name, $id) {
+    	if ($column_name === 'alt')
+        	echo get_post_meta( $id, '_wp_attachment_image_alt', true);
+	}
 
 	/**
 	 * Remove the default meta boxes from the wordpress admin dashboard.
@@ -57,14 +68,14 @@ class Admin
 	// Function that outputs the contents of the dashboard widget
 	function dashboard_widget_hello($post, $callback_args) 
 	{
-		include_once AC_PLUGIN_PATH . 'templates/widgets/hello.php';
+		include_once AC_PLUGIN_PATH . 'widgets/hello.php';
 	}
 
 	// Function that outputs the contents of the dashboard widget
 	function dashboard_widget_quick_links($post, $callback_args) 
 	{
 		// echo "Hello, this is the administration of your site. If you require assistance please get in touch!";
-		include_once AC_PLUGIN_PATH . 'templates/widgets/quick-links.php';
+		include_once AC_PLUGIN_PATH . 'widgets/quick-links.php';
 	}
 
 	// Function used in the action hook
@@ -111,8 +122,8 @@ class Admin
 		}
 
 		if (function_exists('acf_add_local_field_group')) {
-			include_once AC_PLUGIN_PATH . 'views/options-site.php';
-			include_once AC_PLUGIN_PATH . 'views/options-marketing.php';
+			include_once AC_PLUGIN_PATH . 'views/admin/options-site.php';
+			include_once AC_PLUGIN_PATH . 'views/admin/options-marketing.php';
 		}
 	}
 }
