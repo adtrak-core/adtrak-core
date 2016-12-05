@@ -62,7 +62,6 @@ $updater = new $className(
     __FILE__,
     'master'
 );
-$updater->setAccessToken('68611256e09d579f6e9acc3a41449e498a670bf0');
 
 /**
  * Begins execution of the plugin.
