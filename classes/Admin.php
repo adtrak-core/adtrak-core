@@ -53,4 +53,35 @@ class Admin
         echo $footer_content;
         remove_filter('update_footer', 'core_update_footer');
     }
+
+	// Function that outputs the contents of the dashboard widget
+	function dashboard_widget_hello($post, $callback_args) 
+	{
+		include_once AC_PLUGIN_PATH . 'templates/widgets/hello.php';
+	}
+
+	// Function that outputs the contents of the dashboard widget
+	function dashboard_widget_quick_links($post, $callback_args) 
+	{
+		// echo "Hello, this is the administration of your site. If you require assistance please get in touch!";
+		include_once AC_PLUGIN_PATH . 'templates/widgets/quick-links.php';
+	}
+
+	// Function used in the action hook
+	function add_dashboard_widgets() 
+	{
+		wp_add_dashboard_widget(
+			'hello_dashboard_widget', 
+			'Dashboard', 
+			[$this, 'dashboard_widget_hello']
+		);
+
+		if(current_user_can('manage_options')) {
+			wp_add_dashboard_widget(
+				'shortcuts_dashboard_widget', 
+				'Adtrak: Quick Links', 
+				[$this, 'dashboard_widget_quick_links']
+			);
+		}
+	}
 }

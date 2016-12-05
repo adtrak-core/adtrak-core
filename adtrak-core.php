@@ -33,8 +33,8 @@ if ( ! defined( 'WPINC' ) ) {
 require_once __DIR__ . '/vendor/autoload.php';
 
 # define apths
-define( 'AC_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
-define( 'AC_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+defined('AC_PLUGIN_PATH') or define('AC_PLUGIN_PATH', plugin_dir_path( __FILE__ ));
+defined('AC_PLUGIN_URL') or define('AC_PLUGIN_URL', plugin_dir_url( __FILE__ ));
 
 /**
  * The code that runs during plugin activation.

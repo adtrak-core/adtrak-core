@@ -44,6 +44,8 @@ class Core
 		$this->loader->add_action('admin_init', $admin, 'remove_default_meta_box');
 		$this->loader->add_filter('admin_footer_text', $admin, 'adtrak_footer_content');
 
+		$this->loader->add_action('wp_dashboard_setup', $admin, 'add_dashboard_widgets');
+
 		$cookie = new Cookies($this->version);
 		$this->loader->add_action('init', $cookie, 'register_shortcodes');
 	}
