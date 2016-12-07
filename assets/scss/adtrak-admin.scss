@@ -21,7 +21,7 @@ $font_0: Open Sans;
 $font_1: sans-serif;
 
 //urls
-$url_0: url(https://www.adtrak.co.uk/wp-content/themes/adtrak-theme/images/logos/logo.png);
+$url_0: url(https://www.adtrak.co.uk/wp-content/themes/adtrak.co.uk/images/logos/logo-white.svg);
 
 //@extend-elements
 //original selectors
@@ -1056,8 +1056,9 @@ html.wp-toolbar {
 .login #login h1 {
   height: 150px;
   a {
-    width: 100% !important;
+    width: 80% !important;
     height: 100% !important;
+    display: block;
     background-size: contain !important;
     background-image: $url_0 !important;
     background-position: center bottom;
