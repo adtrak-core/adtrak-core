@@ -11,19 +11,27 @@
 
 namespace AdtrakCore\Classes;
 
-use \AdtrakCore\Classes\Loader as Loader;
-use \AdtrakCore\Classes\Admin as Admin;
-use \AdtrakCore\Classes\CookieNotification as Cookies;
-use \AdtrakCore\Classes\Cleanup as Cleanup;
+use AdtrakCore\Classes\Loader as Loader;
+use AdtrakCore\Classes\Admin as Admin;
+use AdtrakCore\Classes\CookieNotification as Cookies;
+use AdtrakCore\Classes\Cleanup as Cleanup;
 
 class Core
 {
 	protected $loader;
 	protected $version;
 
+	private static $instance = null;
+
+	public static function instance()
+	{
+ 		null === self::$instance and self::$instance = new self;
+        return self::$instance;
+	} 
+
 	public function __construct()
 	{
-		$this->version = '0.1';
+		$this->version = '0.3';
 
 		$this->loader = new Loader;
 

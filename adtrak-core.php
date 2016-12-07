@@ -15,7 +15,7 @@
  * Plugin Name: 	Adtrak Core
  * Plugin URI: 		http://github.com/adtrak-core/plugin
  * Description: 	Core functionality for WordPress Development.
- * Version: 		0.3.0
+ * Version: 		0.3.1
  * Author: 			Adtrak
  * Author URI: 		https://adtrak.co.uk
  * License: 		GPL-2.0+
@@ -58,7 +58,7 @@ function deactivate_core()
 require __DIR__ . '/vendor/yahnis-elsts/plugin-update-checker/plugin-update-checker.php';
 $className = PucFactory::getLatestClassVersion('PucGitHubChecker');
 $updater = new $className(
-    'https://github.com/adtrak-core/plugin',
+    'https://github.com/adtrak-core/adtrak-core',
     __FILE__,
     'master'
 );
@@ -73,7 +73,7 @@ $updater = new $className(
  * @since    1.0.0
  */
 function ac_run_core() {
-	$plugin = new \AdtrakCore\Classes\Core(); 
+	$plugin = \AdtrakCore\Classes\Core::instance(); 
 	$plugin->run();
 }
 
