@@ -21,6 +21,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Changelog ==
 
+= 0.9.0 =
+- added in the site options after discussions
+- updated problems with Class naming convention.
+- initial release for beta testing in WD
+
 = 0.3.0 =
 - added in the alt tags to media library.
 - added in default dashboard widgets
