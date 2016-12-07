@@ -745,7 +745,6 @@ html.wp-toolbar {
   .login #login h1 a {
     width: 80% !important;
     height: 100% !important;
-    display: block;
     background-size: contain !important;
     background-image: url(https://www.adtrak.co.uk/wp-content/themes/adtrak.co.uk/images/logos/logo-white.svg) !important;
     background-position: center bottom; }
