@@ -185,9 +185,6 @@ $url_0: url(https://www.adtrak.co.uk/wp-content/themes/adtrak.co.uk/images/logos
   border-radius: 3px !important;
 }
 
-
-* {
-}
 input[type=number]::-webkit-inner-spin-button {
   margin: 0;
 }
@@ -277,7 +274,7 @@ body {
       margin-left: 40px;
     }
     .wrap {
-      margin: 44px 0 0;
+      margin: 20px 0 0;
       padding: 25px 40px 65px;
       .nav-tab-wrapper {
         width: 100%;
@@ -304,7 +301,7 @@ body {
 }
 #wpfooter {
   padding: 10px 0;
-  margin-left: 220px;
+  margin-left: 195px;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -923,13 +920,17 @@ input[type="search"] {
   }
 }
 #adminmenuback {
-  width: 180px;
+  @media(min-width: 960px) {
+    width: 180px;
+  }
   border-right: none;
   position: fixed;
   z-index: 0;
 }
 #adminmenuwrap {
-  width: 180px;
+  @media(min-width: 960px) {
+    width: 180px;
+  }
   border-right: none;
   * {
     transition-delay: 0;
@@ -983,7 +984,9 @@ input[type="search"] {
   }
 }
 #adminmenu {
-  width: 180px;
+  @media (min-width: 960px) {
+    width: 180px;
+  }
   border-right: none;
 }
 
@@ -1133,3 +1136,4 @@ img.help_tip {
     padding-top: 10px !important;
   }
 }
+

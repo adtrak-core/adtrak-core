@@ -212,8 +212,6 @@ body.login {
   #wpcontent button::after {
     bottom: 0 !important;
     top: 50%;
-    -webkit-transform: translateY(-35%);
-    -ms-transform: translateY(-35%);
     transform: translateY(-35%); }
   #wpcontent #screen-meta-links .screen-meta-toggle {
     border: none !important; }
@@ -222,7 +220,7 @@ body.login {
   #wpcontent #wpbody #wpbody-content > * {
     margin-left: 40px; }
   #wpcontent #wpbody #wpbody-content .wrap {
-    margin: 44px 0 0;
+    margin: 20px 0 0;
     padding: 25px 40px 65px; }
     #wpcontent #wpbody #wpbody-content .wrap .nav-tab-wrapper {
       width: 100%;
@@ -243,7 +241,7 @@ body.login {
 
 #wpfooter {
   padding: 10px 0;
-  margin-left: 220px;
+  margin-left: 195px;
   white-space: nowrap;
   overflow: hidden; }
 
@@ -452,12 +450,8 @@ input[type="search"] {
   text-align: center; }
 
 .adtrak-wrap .adtrak-themes #adtrak_themes {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex; }
   .adtrak-wrap .adtrak-themes #adtrak_themes label {
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
     flex-grow: 1; }
 
 .adtrak-wrap .adtrak-themes input[type="radio"] {
@@ -545,14 +539,8 @@ input[type="search"] {
     opacity: .5;
     pointer-events: none; }
   .adtrak-wrap #adtrak-custom-menu ul li {
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
     justify-content: flex-end;
     position: relative;
     height: 50px;
@@ -644,14 +632,18 @@ input[type="search"] {
   clear: both; }
 
 #adminmenuback {
-  width: 180px;
   border-right: none;
   position: fixed;
   z-index: 0; }
+  @media (min-width: 960px) {
+    #adminmenuback {
+      width: 180px; } }
 
 #adminmenuwrap {
-  width: 180px;
   border-right: none; }
+  @media (min-width: 960px) {
+    #adminmenuwrap {
+      width: 180px; } }
   #adminmenuwrap * {
     transition-delay: 0;
     transition-duration: 0;
@@ -688,8 +680,10 @@ input[type="search"] {
             font-weight: bold; }
 
 #adminmenu {
-  width: 180px;
   border-right: none; }
+  @media (min-width: 960px) {
+    #adminmenu {
+      width: 180px; } }
 
 @media only screen and (max-width: 780px) {
   #adminmenuback {
@@ -709,11 +703,7 @@ input[type="search"] {
 
 @media only screen and (max-width: 500px) {
   .adtrak-wrap .adtrak-themes #adtrak_themes {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center; }
     .adtrak-wrap .adtrak-themes #adtrak_themes label {
       width: calc(100% - 50px);
