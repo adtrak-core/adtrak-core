@@ -270,11 +270,14 @@ body {
     }
   }
   #wpbody #wpbody-content {
-    > * {
-      margin-left: 40px;
+    width: calc(100% - 50px);
+
+    @media (min-height: 730px) {
+      width: calc(100% - 65px);
+      margin-left: 45px;
     }
+
     .wrap {
-      margin: 20px 0 0;
       padding: 25px 40px 65px;
       .nav-tab-wrapper {
         width: 100%;
@@ -924,7 +927,6 @@ input[type="search"] {
     width: 180px;
   }
   border-right: none;
-  position: fixed;
   z-index: 0;
 }
 #adminmenuwrap {
