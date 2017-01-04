@@ -68,9 +68,6 @@
 
 #adminmenuwrap {
   background: #222; }
-  @media (min-width: 960px) {
-    #adminmenuwrap {
-      width: 205px; } }
   #adminmenuwrap ul#adminmenu {
     box-sizing: border-box; }
     @media (min-width: 961px) {
