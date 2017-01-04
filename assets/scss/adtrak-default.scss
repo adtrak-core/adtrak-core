@@ -143,7 +143,7 @@ $color_new_york_pink_approx: #d8877e;
                 li a {
                     color: $color_bon_jour_approx;
                     font-size: 13px;
-                    
+
                     &.current,
                     &:hover,
                     &:focus {
@@ -373,7 +373,7 @@ input[type=radio] {
         padding-left: 0;
     }
     #adminmenuwrap ul#adminmenu {
-        padding: 10px;
+        padding: 10px 0px;
 
         li.wp-menu-separator {
             height: 0 !important;
@@ -381,6 +381,10 @@ input[type=radio] {
     }
 }
 @media only screen and(max-width: 782px) {
+    #adminmenuwrap ul#adminmenu {
+        padding: 10px;
+    }
+
     #wpadminbar {
         padding-right: 0;
         #wp-admin-bar-menu-toggle a {

@@ -257,11 +257,13 @@ input[type=radio]:checked:before {
     width: 100% !important;
     padding-left: 0; }
   #adminmenuwrap ul#adminmenu {
-    padding: 10px; }
+    padding: 10px 0px; }
     #adminmenuwrap ul#adminmenu li.wp-menu-separator {
       height: 0 !important; } }
 
 @media only screen and (max-width: 782px) {
+  #adminmenuwrap ul#adminmenu {
+    padding: 10px; }
   #wpadminbar {
     padding-right: 0; }
     #wpadminbar #wp-admin-bar-menu-toggle a {
