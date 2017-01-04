@@ -1,11 +1,7 @@
 #wpfooter {
-  padding-left: 1px;
+  padding-left: 52px;
   padding-right: 20px;
   position: relative; }
-
-@media (min-width: 961px) {
-  #wpbody-content {
-    padding-bottom: 40px !important; } }
 
 #wpcontent {
   padding-left: 0; }
@@ -104,7 +100,8 @@
       padding-left: 25px;
       background: transparent; }
       #adminmenuwrap ul#adminmenu li.wp-has-submenu ul.wp-submenu li a {
-        color: #e0e0e0; }
+        color: #e0e0e0;
+        font-size: 13px; }
         #adminmenuwrap ul#adminmenu li.wp-has-submenu ul.wp-submenu li a.current, #adminmenuwrap ul#adminmenu li.wp-has-submenu ul.wp-submenu li a:hover, #adminmenuwrap ul#adminmenu li.wp-has-submenu ul.wp-submenu li a:focus {
           color: white; }
     #adminmenuwrap ul#adminmenu li.wp-has-submenu:not(.wp-menu-open):hover ul.wp-submenu {
@@ -260,7 +257,7 @@ input[type=radio]:checked:before {
     width: 100% !important;
     padding-left: 0; }
   #adminmenuwrap ul#adminmenu {
-    padding: 0; }
+    padding: 10px; }
     #adminmenuwrap ul#adminmenu li.wp-menu-separator {
       height: 0 !important; } }
 
@@ -286,6 +283,19 @@ input[type=radio]:checked:before {
     top: 0; }
   .no-js li.wp-has-submenu:hover .wp-submenu {
     top: 0; } }
+
+@media (min-width: 961px) {
+  #wpbody #wpbody-content {
+    padding-bottom: 40px !important; } }
+
+@media (max-height: 729px) and (min-width: 961px) {
+  #wpbody #wpbody-content {
+    width: calc(100% - 50px); } }
+
+@media (min-height: 730px) and (min-width: 961px) {
+  #wpbody #wpbody-content {
+    width: calc(100% - 65px);
+    margin-left: 45px; } }
 
 #wpbody #wpbody-content #screen-meta {
   box-shadow: none; }

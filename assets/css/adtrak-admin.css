@@ -217,30 +217,24 @@ body.login {
     border: none !important; }
     #wpcontent #screen-meta-links .screen-meta-toggle button {
       border-radius: 0 !important; }
-  #wpcontent #wpbody #wpbody-content {
-    width: calc(100% - 50px); }
-    @media (min-height: 730px) {
-      #wpcontent #wpbody #wpbody-content {
-        width: calc(100% - 65px);
-        margin-left: 45px; } }
-    #wpcontent #wpbody #wpbody-content .wrap {
-      padding: 25px 40px 65px; }
-      #wpcontent #wpbody #wpbody-content .wrap .nav-tab-wrapper {
-        width: 100%;
-        margin-left: -40px;
-        margin-top: -70px;
-        margin-bottom: 25px;
-        padding-top: 80px;
-        padding-left: 40px;
-        padding-right: 40px;
-        border-bottom: 0; }
-        #wpcontent #wpbody #wpbody-content .wrap .nav-tab-wrapper .nav-tab {
-          margin: 0;
-          padding: 0 12px 6px;
-          border: none;
-          background: none; }
-          #wpcontent #wpbody #wpbody-content .wrap .nav-tab-wrapper .nav-tab.nav-tab-active, #wpcontent #wpbody #wpbody-content .wrap .nav-tab-wrapper .nav-tab:hover {
-            background: transparent; }
+  #wpcontent #wpbody #wpbody-content .wrap {
+    padding: 25px 40px 65px; }
+    #wpcontent #wpbody #wpbody-content .wrap .nav-tab-wrapper {
+      width: 100%;
+      margin-left: -40px;
+      margin-top: -70px;
+      margin-bottom: 25px;
+      padding-top: 80px;
+      padding-left: 40px;
+      padding-right: 40px;
+      border-bottom: 0; }
+      #wpcontent #wpbody #wpbody-content .wrap .nav-tab-wrapper .nav-tab {
+        margin: 0;
+        padding: 0 12px 6px;
+        border: none;
+        background: none; }
+        #wpcontent #wpbody #wpbody-content .wrap .nav-tab-wrapper .nav-tab.nav-tab-active, #wpcontent #wpbody #wpbody-content .wrap .nav-tab-wrapper .nav-tab:hover {
+          background: transparent; }
 
 #wpfooter {
   padding: 10px 0;

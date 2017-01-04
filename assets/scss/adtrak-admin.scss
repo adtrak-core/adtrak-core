@@ -270,12 +270,6 @@ body {
     }
   }
   #wpbody #wpbody-content {
-    width: calc(100% - 50px);
-
-    @media (min-height: 730px) {
-      width: calc(100% - 65px);
-      margin-left: 45px;
-    }
 
     .wrap {
       padding: 25px 40px 65px;

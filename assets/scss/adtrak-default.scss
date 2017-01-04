@@ -7,16 +7,11 @@ $adtrak_charcoal: #222;
 $color_new_york_pink_approx: #d8877e;
 
 #wpfooter {
-    padding-left: 1px;
+    padding-left: 52px;
     padding-right: 20px;
     position: relative;
 }
 
-#wpbody-content {
-    @media(min-width: 961px) {
-        padding-bottom: 40px !important;
-    }
-}
 #wpcontent {
     padding-left: 0;
     @media(min-width: 961px) {
@@ -108,6 +103,7 @@ $color_new_york_pink_approx: #d8877e;
     
     ul#adminmenu {
         box-sizing: border-box;
+
         li {
             @media(min-width: 961px) {
                 padding: 0 20px;
@@ -117,6 +113,7 @@ $color_new_york_pink_approx: #d8877e;
                 top: 0;
                 background: #222222;
             }
+
             a {
                 .wp-menu-name,
                 .wp-menu-image:before {
@@ -145,7 +142,8 @@ $color_new_york_pink_approx: #d8877e;
                 background: transparent;
                 li a {
                     color: $color_bon_jour_approx;
-
+                    font-size: 13px;
+                    
                     &.current,
                     &:hover,
                     &:focus {
@@ -375,7 +373,8 @@ input[type=radio] {
         padding-left: 0;
     }
     #adminmenuwrap ul#adminmenu {
-        padding: 0;
+        padding: 10px;
+
         li.wp-menu-separator {
             height: 0 !important;
         }
@@ -421,7 +420,22 @@ input[type=radio] {
         top: 0;
     }
 }
+
 #wpbody #wpbody-content {
+
+    @media(min-width: 961px) {
+        padding-bottom: 40px !important;
+    }
+
+    @media (max-height: 729px) and (min-width: 961px) {
+        width: calc(100% - 50px);    
+    }
+
+    @media (min-height: 730px) and (min-width: 961px) {
+      width: calc(100% - 65px);
+      margin-left: 45px;
+    }
+
     #screen-meta {
         box-shadow: none;
     }
