@@ -95,35 +95,4 @@ class Admin
 			);
 		}
 	}
-
-	public function render_options_page()
-	{
-		if (function_exists('acf_add_options_page')) {
-
-			$specific_page = acf_add_options_page([
-				'page_title' 	=> 'Site Options',
-				'menu_title' 	=> 'Site Options',
-				'menu_slug' 	=> 'site-options',
-				'position' 		=> 75,
-				'capability' 	=> 'edit_themes',
-				'icon_url' 		=> 'dashicons-hammer',
-				'redirect' 		=> false
-			]);
-
-			$marketing_page = acf_add_options_page([
-				'page_title' 	=> 'Marketing',
-				'menu_title' 	=> 'Marketing',
-				'menu_slug' 	=> 'marketing',
-				'position' 		=> 75,
-				'capability' 	=> 'edit_themes',
-				'icon_url' 		=> 'dashicons-randomize',
-				'redirect' 		=> false
-			]);
-		}
-
-		if (function_exists('acf_add_local_field_group')) {
-			include_once AC_PLUGIN_PATH . 'views/admin/options-site.php';
-			include_once AC_PLUGIN_PATH . 'views/admin/options-marketing.php';
-		}
-	}
 }
