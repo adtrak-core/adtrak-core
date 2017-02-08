@@ -452,11 +452,12 @@ input[type=radio] {
         margin-top: 30px !important;
 
         .nav-tab-wrapper {
-            background-color: $white;
+            // background-color: $white;
             .nav-tab {
+                border: 0;
                 &.nav-tab-active,
                 &:hover {
-                    border-bottom: 3px solid $adtrak_orange;
+                    border-bottom:1px solid $adtrak_orange;
                 }
             }
         }

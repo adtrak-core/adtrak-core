@@ -218,21 +218,18 @@ body.login {
     #wpcontent #screen-meta-links .screen-meta-toggle button {
       border-radius: 0 !important; }
   #wpcontent #wpbody #wpbody-content .wrap .nav-tab-wrapper {
-    width: 100%;
-    margin-left: -40px;
-    margin-top: -70px;
-    margin-bottom: 25px;
-    padding-top: 80px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-bottom: 0; }
+    border-bottom: 1px solid #ddd;
+    margin-bottom: -23px;
+    margin-top: 15px; }
     #wpcontent #wpbody #wpbody-content .wrap .nav-tab-wrapper .nav-tab {
       margin: 0;
-      padding: 0 12px 6px;
-      border: none;
-      background: none; }
+      padding: 6px 12px 6px;
+      border: 1px solid #eee;
+      background: transparent;
+      margin-bottom: -1px; }
       #wpcontent #wpbody #wpbody-content .wrap .nav-tab-wrapper .nav-tab.nav-tab-active, #wpcontent #wpbody #wpbody-content .wrap .nav-tab-wrapper .nav-tab:hover {
-        background: transparent; }
+        background: #fff;
+        border-bottom: 1px solid #f15f48; }
 
 #wpfooter {
   padding: 10px 0;

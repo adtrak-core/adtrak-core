@@ -272,23 +272,20 @@ body {
   #wpbody #wpbody-content {
 
     .wrap {
-      .nav-tab-wrapper {
-        width: 100%;
-        margin-left: -40px;
-        margin-top: -70px;
-        margin-bottom: 25px;
-        padding-top: 80px;
-        padding-left: 40px;
-        padding-right: 40px;
-        border-bottom: 0;
+      .nav-tab-wrapper {   
+        border-bottom: 1px solid #ddd;
+        margin-bottom: -23px;
+        margin-top: 15px;
         .nav-tab {
           margin: 0;
-          padding: 0 12px 6px;
-          border: none;
-          background: none;
+          padding: 6px 12px 6px;
+          border: 1px solid #eee;
+          background: transparent;
+          margin-bottom: -1px;
           &.nav-tab-active,
           &:hover {
-            background: transparent;
+            background: #fff;
+            border-bottom:1px solid #f15f48;
           }
         }
       }

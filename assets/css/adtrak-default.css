@@ -302,10 +302,10 @@ input[type=radio]:checked:before {
 #wpbody #wpbody-content .wrap {
   background-color: #F0F0F2;
   margin-top: 30px !important; }
-  #wpbody #wpbody-content .wrap .nav-tab-wrapper {
-    background-color: white; }
+  #wpbody #wpbody-content .wrap .nav-tab-wrapper .nav-tab {
+    border: 0; }
     #wpbody #wpbody-content .wrap .nav-tab-wrapper .nav-tab.nav-tab-active, #wpbody #wpbody-content .wrap .nav-tab-wrapper .nav-tab:hover {
-      border-bottom: 3px solid #f15f48; }
+      border-bottom: 1px solid #f15f48; }
 
 .js #adminmenu .sub-open,
 .js #adminmenu li.wp-not-current-submenu.opensub .wp-submenu {
