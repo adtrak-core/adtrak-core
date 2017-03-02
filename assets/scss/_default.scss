@@ -26,11 +26,11 @@ $color_new_york_pink_approx: #d8877e;
 }
 #wpadminbar {
     z-index: 9998 !important;
-    width: calc(100% - 205px);
+    width: calc(100% - 220px);
     height: 46px;
-    left: 205px;
-    padding-left: 17px;
-    padding-right: 45px;
+    left: 220px;
+    padding-left: 19px;
+    padding-right: 26px;
     box-sizing: border-box;
     background: #EEEEF0;
     border-bottom: thin solid #e0e0e0;
@@ -91,7 +91,7 @@ $color_new_york_pink_approx: #d8877e;
 }
 #adminmenuback {
     @media(min-width: 960px) {
-        width: 205px;
+        width: 220px;
     }
     background: $adtrak_charcoal;
     left: 0;
@@ -109,7 +109,7 @@ $color_new_york_pink_approx: #d8877e;
 
         li {
             @media(min-width: 961px) {
-                padding: 0 20px;
+                padding: 0 15px;
             }
 
             &.wp-not-current-submenu:hover ul.wp-submenu {
@@ -431,7 +431,7 @@ input[type=radio] {
 #wpbody {
     @media(min-width: 961px) {
         width: calc(100% - 110px);
-        margin-left: 70px;
+        margin-left: 90px;
     }
 }
 

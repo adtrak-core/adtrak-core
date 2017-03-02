@@ -21,6 +21,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Changelog ==
 
+= 0.9.14 =
+- Adding more width / reducing padding on sidebar. Should stop breaks
+- Amending some colour styles throughout
+- Combining stylesheets for quicker loads, removing redundant files.
+
 = 0.9.0 =
 - added in the site options after discussions
 - updated problems with Class naming convention.

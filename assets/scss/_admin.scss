@@ -928,7 +928,7 @@ input[type="search"] {
 }
 #adminmenuwrap {
   @media(min-width: 960px) {
-    width: 180px;
+    width: 210px;
   }
   border-right: none;
   * {
@@ -1137,3 +1137,6 @@ img.help_tip {
   }
 }
 
+.active th.check-column {
+  border-left: 4px solid #00B4AE !important;
+}
