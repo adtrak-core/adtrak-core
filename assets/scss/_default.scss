@@ -175,7 +175,8 @@
 
 			&.wp-not-current-submenu {
 				ul.wp-submenu {
-					left: 155px;
+					// left: 155px;
+                    left: 35px;
 					margin-top: 1px;
 					@media (min-width: 960px) {
 						left: 200px;
