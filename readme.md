@@ -20,7 +20,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 == Frequently Asked Questions ==
 
 == Changelog ==
-= 0.9.15 =
+= 0.9.16 =
 - [Bug] Fixes a minor issue with menu
 
 = 0.9.14 =
