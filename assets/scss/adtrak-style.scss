@@ -143,6 +143,11 @@ a {
     background-color: darken(color(charcoal), 5%);
 }
 
+#adminmenu {
+  .awaiting-mod, .update-plugins {
+    background-color: color(adtrakOrange);
+  }
+}
 
 
 	// 		&.wp-menu-separator {
