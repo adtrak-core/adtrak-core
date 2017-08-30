@@ -441,7 +441,8 @@ body.login {
 	}
 }
 
-.login .message {
+.login .message,
+.login #login_error {
   margin-top: 20px;
 }
 
