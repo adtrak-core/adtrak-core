@@ -79,10 +79,6 @@ a {
   padding-left: 12px;
   padding-right: 12px;
 
-  a, li {
-    transition: .3s color ease-in-out, .3s background-color ease-in-out;
-  }
-
 	li {
 		a {
       background-color: color(concrete) !important;
