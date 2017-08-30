@@ -176,6 +176,10 @@ a {
       & a.wp-has-current-submenu,
       &.current.menu-top a {
         background: color(charcoal);
+        .wp-menu-name,
+        .wp-menu-image:before {
+          color: color(white);
+        }
       }
 
       &.wp-has-submenu ul.wp-submenu {
