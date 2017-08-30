@@ -279,20 +279,26 @@ a {
 	}
 }
 
+%button {
+  transition: .3s all ease;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+
 button,
 .button,
-.acf-button {
+.acf-button, {
 	&.blue,
 	&.button-primary {
-    transition: .3s all ease;
+    @extend %button;
     background-color: color(adtrakOrange) !important;
-    border: none;
-    box-shadow: none;
-    text-shadow: none;
-
-		&:hover {
-  		background-color: darken(color(adtrakOrange), 8%) !important;  
-		}
+    
+    &:hover,
+    &:focus {
+      background-color: darken(color(adtrakOrange), 8%) !important;  
+    }
 	}
 
 	&:active,
@@ -301,9 +307,51 @@ button,
 	}
 }
 
+.wrap .page-title-action {
+  @extend %button;
+  border: 1px solid #ddd;
+  padding: 6px 15px;
+  color: color(charcoal);
+
+  &:hover, &:focus {
+    color: color(white);
+    background-color: color(adtrakOrange);
+    border: 1px solid color(adtrakOrange);
+  }
+}
+
 .wp-core-ui {
-  .button.button-large {
-    padding: 0 12px;    
+  .acf-button,
+	.add-new-h2,
+	.button,
+  .button-primary,
+  .button-large {    
+    height: auto;
+    padding: 0 12px;
+    line-height: 26px;
+    border-radius: 3px;
+    transition: .3s all ease-in-out;
+  }
+
+  .button,
+  .button-secondary {
+    background-color: color(concrete);
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+      background-color: color(adtrakOrange);
+      border-color: color(adtrakOrange);
+      color: color(white);
+
+      .wp-media-buttons-icon:before {
+        color: color(white);
+      }
+    }
+  }
+
+  .wp-media-buttons-icon {
+    transition: .3s all ease-in-out;
   }
 
 	.button-primary {
@@ -312,11 +360,90 @@ button,
 			color: color(concrete) !important;
 			background-color: color(adtrakOrange) !important;
 		}
-	}
+  }
 
 	.button-primary-disabled,
 	.button-primary[disabled] {
 		color: color(concrete) !important;
 		background-color: color(adtrakOrange) !important;
 	}
+}
+
+input[type=radio] {
+	&:focus {
+		border-color: color(adtrakOrange) !important;
+	}
+
+	&:checked:before {
+		background-color: color(adtrakOrange);
+	}
+}
+
+input[type=checkbox]:focus,
+input[type=color]:focus,
+input[type=date]:focus,
+input[type=datetime-local]:focus,
+input[type=datetime]:focus,
+input[type=email]:focus,
+input[type=month]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=text]:focus,
+input[type=time]:focus,
+input[type=url]:focus,
+input[type=week]:focus,
+select:focus,
+textarea:focus {
+  border-color: color(adtrakOrange) !important;
+  box-shadow: 0 0 2px rgba(color(adtrakOrange), .8);
+}
+
+input[type="search"] {
+	height: 26px !important;
+	box-shadow: none !important;
+  border-radius: 3px !important;
+  font-size: 14px !important;
+}
+
+.view-switch a.current:before,
+input[type="checkbox"]:before {
+	color: color(adtrakOrange) !important;
+}
+
+#post-preview,
+#save-post {
+	width: 100% !important;
+}
+
+// LOGIN
+body.login {
+  background-color: color(adtrakOrange);
+}
+
+.login #login h1 {
+	height: 150px;
+
+	a {
+		width: 80% !important;
+		height: 100% !important;
+		background-size: contain !important;
+		background-image: $url_0 !important;
+		background-position: center bottom;
+	}
+}
+
+// PLUGINS
+.active th.check-column {
+	border-left: 4px solid #00B4AE !important;
+}
+
+.subsubsub {
+  margin: 18px 0 5px;
+}
+
+.tablenav {
+  margin: 10px 0;
+  height: 40px;
 }
