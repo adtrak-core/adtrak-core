@@ -441,8 +441,22 @@ body.login {
 	}
 }
 
+.login .message {
+  margin-top: 20px;
+}
+
+.login #backtoblog a, .login #nav a {
+  color: color(white);
+
+  &:hover {
+    color: color(white);
+    text-decoration: underline;
+  }
+}
+
 // PLUGINS
-.active th.check-column {
+.active th.check-column,
+.login .message {
 	border-left: 4px solid #00B4AE !important;
 }
 
