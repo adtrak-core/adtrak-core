@@ -232,12 +232,15 @@ a {
     background-color: darken(color(charcoal), 5%);
 }
 
-#adminmenu {
-  .awaiting-mod, .update-plugins {
+#adminmenu,
+#adminmenu li a.wp-has-current-submenu,
+#adminmenu li a.current {
+  a .awaiting-mod, .update-plugins {
     background-color: color(adtrakOrange);
   }
 }
 
+// Fold content
 .autofold, .folded {
   li.wp-not-current-submenu ul.wp-submenu {
     left: 36px !important;
@@ -265,5 +268,55 @@ a {
   #adminmenuwrap ul#adminmenu {
     margin-left: 0; 
   } 
+}
 
+// buttons
+.button-primary {
+  background-color: color(adtrakOrange) !important;
+
+	&:hover {
+		background-color: darken(color(adtrakOrange), 5%) !important;
+	}
+}
+
+button,
+.button,
+.acf-button {
+	&.blue,
+	&.button-primary {
+    transition: .3s all ease;
+    background-color: color(adtrakOrange) !important;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+
+		&:hover {
+  		background-color: darken(color(adtrakOrange), 8%) !important;  
+		}
+	}
+
+	&:active,
+	&:focus {
+		outline: none !important;
+	}
+}
+
+.wp-core-ui {
+  .button.button-large {
+    padding: 0 12px;    
+  }
+
+	.button-primary {
+		&.disabled,
+		&:disabled {
+			color: color(concrete) !important;
+			background-color: color(adtrakOrange) !important;
+		}
+	}
+
+	.button-primary-disabled,
+	.button-primary[disabled] {
+		color: color(concrete) !important;
+		background-color: color(adtrakOrange) !important;
+	}
 }
