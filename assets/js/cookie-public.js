@@ -47,7 +47,6 @@ function eraseCookie(name) {
         notificationToggle();
     });
 
-
     function notificationToggle (){
         createCookie('PrivacyPolicy', 'closed', 7)
         $('#wp-notification').fadeOut(500);
