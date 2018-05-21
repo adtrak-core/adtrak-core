@@ -38,6 +38,15 @@ class CookieNotification
 	}
 
 	/**
+	 * Force policy notification.
+	 */
+	public function force_policy()
+	{
+		do_shortcode('[cookie_notification]');
+	}
+
+
+	/**
 	 * add the content for the page.
 	 * @since    1.0.0
 	 */
