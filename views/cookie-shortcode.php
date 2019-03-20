@@ -1,7 +1,16 @@
 <?php
+
 $url = '/privacy-policy';
-if(get_page_by_title('Privacy Policy') == null) {
-	$url = '/cookie-policy';
+
+$cookiePage = get_page_by_title('Cookie Policy');
+$privacyPage = get_page_by_title('Privacy Policy');
+
+if($cookiePage != null) {
+	$cookieStatus = get_post_status($cookiePage->ID);
+
+	if($cookieStatus == 'publish') {
+		$url = '/cookie-policy';
+	}
 }
 ?>
 <div id="wp-notification" class="closed">
