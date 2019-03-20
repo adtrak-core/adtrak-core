@@ -59,6 +59,7 @@ class Core
 
 		$cookie = new Cookies($this->version);
 		$this->loader->add_action('init', $cookie, 'register_shortcodes');
+		$this->loader->add_action('wp_loaded', $cookie, 'create_page');
 	}
 
 	public function define_login_hooks()
